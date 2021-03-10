@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/media"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,9 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
+        android:hint="masukan tahun lahir anda"
         android:inputType="text"
-        android:lines="1"
-        android:hint="masukan tahun lahir anda" />
+        android:lines="1" />
 
     <Button
         android:id="@+id/btn_click"
@@ -38,9 +39,9 @@
         android:id="@+id/goto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Goto app volume"
-        android:onClick="pindah"
         android:layout_marginLeft="12dp"
+        android:onClick="pindah"
+        android:text="Goto app volume"
         tools:ignore="OnClick" />
 
 

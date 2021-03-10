@@ -30,8 +30,23 @@ class anotherapp : AppCompatActivity(),View.OnClickListener {
      hasil=findViewById(R.id.tvhasil)
         btt.setOnClickListener(this)
 
+
+//        cek aapakah pada hasil tidak sama dengan null atau datanya tidak ada
+//        fungsi save instance
+
+        if (savedInstanceState != null){
+            val result  =  savedInstanceState.getString(STATE_RESULT)
+            hasil.text = result
+        }
+
         supportActionBar?.hide()
     }
+
+//    bagian dari save instance
+    companion object{
+        private const val STATE_RESULT = "state_result"
+    }
+
 
 
     override fun onClick(v: View?) {
@@ -64,4 +79,11 @@ class anotherapp : AppCompatActivity(),View.OnClickListener {
 
         }
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(STATE_RESULT,hasil.text.toString())
+    }
+
+
 }
