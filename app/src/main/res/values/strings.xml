@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">first apllication</string>
+    <string name="length">Panjang</string>
+    <string name="width">Lebar</string>
+    <string name="height">Tinggi</string>
+    <string name="calculate">Hitung</string>
+    <string name="result">Hasil</string>
+    <string name="angka1">enter number</string>
+    <string name="judul">APLIKASI SEDERHANA SAYA</string>
+    <string name="angka2">enter number</string>
+    <string name="hitung">HITUNG</string>
+    <string name="hasil">TextView</string>
+</resources>
